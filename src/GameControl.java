@@ -1,3 +1,5 @@
 interface GameControl {
-    void pressButton(String button);
+    void playGame();
+    void addController();
+    void gameInterface(String button);
 }
