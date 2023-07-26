@@ -26,7 +26,10 @@ public class Computer {
     }
 
     public void chooseController() {
-
+        /*Main içerisinde yazılabilirdi ancak bilgisayara bağlı bir işlem olacağından
+        * computer içerisine yazıldı.
+        * Ps, xbox veya ikisi şekilde kullanıcıdan seçim alındı
+        * seçime göre yeni ps ve xbox nesneleri oluşturularak metotları çağırıldı*/
         System.out.println("Which controller do you want to use? \t 1: Playstation \t 2: XBox \t 3: Both");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();

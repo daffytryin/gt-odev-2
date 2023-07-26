@@ -1,14 +1,14 @@
 import java.util.Scanner;
-import java.util.SortedMap;
+
 
 public class XBoxControl implements GameControl {
 
-    private boolean xboxState = false;
+    private boolean xboxState = false; //ilk durumu kapalı olarak ayarlandı
 
 
     public void openXbox() {
         if (xboxState) {
-            throw new RuntimeException("XBox controller is already open!");
+            throw new RuntimeException("XBox controller is already open!"); //eğer zaten açıksa exception fırlatıldı
         }
         System.out.println("XBox controller is opened !");
         xboxState = true;
@@ -23,7 +23,7 @@ public class XBoxControl implements GameControl {
         xboxState = false;
     }
 
-    @Override
+    @Override //GameControlden metotları kullanabilmek için implement edildi ve override ile metotlar çağırıldı
     public void addController() {
         System.out.println("--------------------------");
         System.out.println("Xbox Controller : Active ");

@@ -42,4 +42,5 @@ public class PlaystationControl implements GameControl {
         System.out.println(button+ " is pressed on Playstation Controller!");
     }
 }
+/*Xbox için yapılan tüm işlemler playstation için de yapıldı*/
 

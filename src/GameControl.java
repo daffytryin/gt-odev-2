@@ -1,5 +1,5 @@
 interface GameControl {
-    void playGame();
-    void addController();
-    void gameInterface(String button);
+
+    void addController(); //controller eklemek için kullanılacak
+    void gameInterface(String button); //oyun yazdırmak için kullanılacak ve girilen string button olacak
 }
